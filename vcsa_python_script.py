@@ -95,7 +95,7 @@ try:
     if response_close.status_code == 200:
         print("Сессия закрыта.")
     else:
-        print(f"Ошибка при закрытии сесси: {response_close.status_code} - {response_close.text}")
+        print(f"Ошибка при закрытии сессии: {response_close.status_code} - {response_close.text}")
 
 except requests.exceptions.RequestException as e:
     print(f"Ошибка при выполнении запроса: {e}")
